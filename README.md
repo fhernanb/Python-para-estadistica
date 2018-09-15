@@ -1,2 +1,6 @@
-# python_estadistica
-En este repositorio se presentan lecciones de Python para hacer estadística
+# Python y estadística
+
+En este repositorio se presentan lecciones de cómo usar Python en estadística.
+
+![Logo de Python](imagenes/python.png)
+
