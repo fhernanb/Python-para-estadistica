@@ -3,6 +3,6 @@
 En este repositorio se presentan lecciones de cómo usar Python en estadística.
 
 <figure>
-  <img src="imagenes/python.png" alt="Logo Python" width="204" height="228">
+  <img src="imagenes/nino_sorpresa.png" alt="Logo Python" width="804" height="628">
 </figure>
 
