@@ -1,6 +1,9 @@
-# Ejemplo tomado de 
-# https://medium.com/@jcrispis56/una-introducci%C3%B3n-completa-a-redes-neuronales-con-python-y-tensorflow-2-0-b7f20bcfebc5#:~:text=Una%20Introducci%C3%B3n%20Completa%20A%20Redes%20Neuronales%20Con%20Python,se%20llaman%20variables%20dependientes%20...%20Mas%20cosas...%20
-# https://iamtrask.github.io/2015/07/12/basic-python-network/
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Aug 18 17:43:09 2020
+
+@author: fhern
+"""
 
 import numpy as np
 
@@ -11,23 +14,21 @@ def nonlin(x, deriv=False):
 	return 1/(1+np.exp(-x))
 
 # A continuacion los datos
-X = np.array([[0,0,1],
-              [0,1,1],
-              [1,0,1],
-              [1,1,1]])
+X = np.array([[1.2, 3.8],
+              [-1.7, 4.9],
+              [2.1, -1.4]])
 
 # Este es el vector de respuestas
-y = np.array([[0],
-	          [1],
-	          [1],
-	          [0]])
-
+y = np.array([[6.2],
+	          [25.5],
+	          [-4.5]])
+    
 # Se fija la semilla
 np.random.seed(1)
 
 # Para crear los valores de inicio que van a estar entre -1 y 1
-syn0 = 2 * np.random.random((3, 4)) - 1
-syn1 = 2 * np.random.random((4, 1)) - 1
+syn0 = 2 * np.random.random((2, 3)) - 1
+syn1 = 2 * np.random.random((3, 1)) - 1
 
 for j in range(6000):
     l0 = X
@@ -47,3 +48,4 @@ for j in range(6000):
 
 print("El resultado es: \n")
 print(l2)
+
