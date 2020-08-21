@@ -49,7 +49,11 @@ type(valor_pi)
 es_mujer = False
 es_colombiano = True
 
-# multiplicacion de enteros y float
+# ===================================================================
+# OPERACIONES
+# ===================================================================
+
+# multiplicacion
 num_ropa = num_camisas * num_pantalones
 num_ropa
 type(num_ropa)
@@ -58,11 +62,59 @@ aux = valor_pi * num_camisas
 aux
 type(aux)
 
+print(5 * saludo)
+
 # suma de strings
 print(saludo + " " + objeto)
 print(saludo + " " + objeto + " mis camisas son " + str(num_camisas))
 
+# potencias
+num_camisas ** 2
 
+# divisiones
+num_camisas / num_pantalones
+9 // 2 # para obtener parte entera
+
+# ===================================================================
+# DEFINICION USANDO math
+# ===================================================================
+import math
+
+math.factorial(5)
+math.floor(5.3)
+math.ceil(5.3)
+math.sin(math.pi)
+math.cos(math.pi)
+math.tan(math.pi)
+math.log(100, 10)
+math.pow(2, 3)
+math.degrees(math.pi)
+math.radians(180)
+math.exp(1)
+math.gcd(20, 15)
+math.pi
+math.tau
+
+round(3.1416, 1)
+
+# ===================================================================
+# BUILT IN FUNCTION
+# ===================================================================
+# Se pueden consultar en
+# https://docs.python.org/3/library/functions.html
+
+abs(-3.14)
+dir()
+
+seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+list(enumerate(seasons))
+
+x = 1
+eval('x+1')
+
+# ===================================================================
+# IMPORTAR LIBRERIA O MODULO O PAQUETE
+# ===================================================================
 
 
 
