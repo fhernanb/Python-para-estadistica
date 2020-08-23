@@ -113,9 +113,66 @@ x = 1
 eval('x+1')
 
 # ===================================================================
-# IMPORTAR LIBRERIA O MODULO O PAQUETE
+# OPERADORES EN PYTHON
 # ===================================================================
 
+# Para consultar la lista de operadores revisar
+# https://www.w3schools.com/python/python_operators.asp
 
+# Operadores aritmeticos
+x = 10
+x / 3
+x // 3
+x % 3
+x ** 2
+
+# Operadores de asignacion
+y = "la cartilla"
+
+x += 5 # significa x = x + 5
+x
+
+x -= 10
+x
+
+x /= x
+x
+
+y += " python3"
+y
+
+# Operadores de comparacion
+y == y
+x == y
+x ==  1
+
+x != y
+x != 1
+
+True != False
+
+10.5638 < 11.2324
+len(y) > x
+
+# Operadores logicos
+x < 5 and x < 10
+x < 5 or x < 4
+not(x < 5 and x < 10)
+
+# Operadores de identidad
+x is x
+y is x
+y is not x
+
+# Operadores de pertenencia
+lista1 = [1, 2, 3, 4, 5]
+
+3 in lista1
+10 not in lista1
+4 not in lista1
+"la" in y
+
+# Bitwise Operators
+(x < 5) & (x < 10)
 
 
