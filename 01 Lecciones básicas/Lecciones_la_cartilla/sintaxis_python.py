@@ -175,4 +175,69 @@ lista1 = [1, 2, 3, 4, 5]
 # Bitwise Operators
 (x < 5) & (x < 10)
 
+# ===================================================================
+# METODOS DE STRING O CADENAS DE TEXTOS
+# ===================================================================
+
+"""
+En este enlace estan todos los metodos para cadenas
+https://www.w3schools.com/python/python_ref_string.asp
+"""
+
+string1 = "la cartilla"
+string2 = "123"
+string3 = "la cartilla - Curso de Python 3 desde Cero"
+
+# Descriptivos o de analisis
+string1.count("cartilla")
+string3.find("Curso")
+string1.islower()
+string3.islower()
+string1.isupper()
+string2.isnumeric()
+
+# De transformacion
+string1.upper()
+string1.title()
+string1.replace("a", "e")
+string3.split("-")
+
+# ===================================================================
+# COLECCIONES / ARREGLOS BASICOS EN PYTHON
+# ===================================================================
+
+# Listas = colecciones ordendas de diversos objetos
+lista1 = [1, 2, 3, 4, "la cartilla", [True, False, True]]
+print(lista1)
+
+lista1[0]  # para obtener el primer elemento
+lista1[5]  # para obtener el último elemento
+lista1[-1] # para obtener el último elemento
+
+lista1[0:4] # para obtener 1° hasta el 4°
+lista1[3:]  # para obtener del 4° en adelante
+lista1[-2:] # para obtener los dos últimos
+
+lista1[-6:] # para obtener la lista con índices negativos
+
+lista1[5][0] # primer elemento de la posición 6
+lista1[5][1:] # elementos 2° y 3° del objeto en posición 6
+
+lista1[1] = 999 # Para modificar el elemento 2°
+lista1[5][0] = -999 # Para modificar el 1° elemento del elemnto 6
+
+del(lista1[-1]) # para borrar el último elemento de la lista
+
+
+
+
+
+
+
+
+
+
+
+
+
 
